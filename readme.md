@@ -1,184 +1,128 @@
-**# Language Translation Tool**
+# Language Translation Tool
 
+## Project Overview
 
+The Language Translation Tool is a web application that allows users to translate text from one language to another. The application provides an easy-to-use interface where users can enter text, select source and target languages, and get instant translations.
 
-**## Overview**
+## Features
 
+- Translate text between multiple languages
+- User-friendly web interface
+- Source language selection
+- Target language selection
+- Fast and accurate translations
+- Built using Python Flask
 
+## Technologies Used
 
-**The Language Translation Tool is a web application that allows users to translate text between multiple languages. Users can enter text, select source and target languages, and instantly receive the translated output.**
+- Python
+- Flask
+- HTML
+- CSS
+- Google Translate API (googletrans)
 
+## Project Structure
 
+```
+Language_Translation_Tool/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+│
+├── templates/
+│   └── index.html
+│
+└── static/
+    └── style.css
+```
 
-**## Features**
+## Installation
 
+### Step 1: Clone the Repository
 
+```bash
+git clone https://github.com/yourusername/Language_Translation_Tool.git
+```
 
-**\* Translate text between multiple languages**
+### Step 2: Navigate to Project Directory
 
-**\* User-friendly interface**
+```bash
+cd Language_Translation_Tool
+```
 
-**\* Source and target language selection**
+### Step 3: Install Required Packages
 
-**\* Fast and accurate translation**
+```bash
+pip install -r requirements.txt
+```
 
-**\* Copy translated text (optional)**
+## Requirements
 
-**\* Text-to-Speech support (optional)**
+Create a file named `requirements.txt` and add:
 
+```text
+Flask
+googletrans==4.0.0rc1
+```
 
+## Running the Application
 
-**## Technologies Used**
+Start the Flask server:
 
+```bash
+python app.py
+```
 
+Open your browser and visit:
 
-**\* Frontend: HTML, CSS, JavaScript**
+```text
+http://127.0.0.1:5000
+```
 
-**\* Backend: Python Flask**
+## How It Works
 
-**\* Translation Library: deep-translator**
+1. Enter text in the input box.
+2. Select the source language.
+3. Select the target language.
+4. Click the Translate button.
+5. The translated text is displayed instantly.
 
-**\* Version Control: Git \& GitHub**
+## Example
 
+Input:
 
+```text
+Hello, How are you?
+```
 
-**## Project Structure**
+Source Language:
 
+```text
+English
+```
 
+Target Language:
 
-**Language\_Translator/**
+```text
+Spanish
+```
 
+Output:
 
+```text
+Hola, ¿Cómo estás?
+```
 
-**├── app.py**
+## Future Enhancements
 
+- Voice-to-text translation
+- Text-to-speech support
+- Translation history
+- Dark mode interface
+- Support for more languages
 
+## Author
 
-**├── templates/**
-
-
-
-**│ └── index.html**
-
-
-
-**├── static/**
-
-
-
-**│ └── style.css**
-
-
-
-**└── README.md**
-
-
-
-**## Installation**
-
-
-
-**### Clone the Repository**
-
-
-
-**```bash**
-
-**git clone https://github.com/your-username/Language\_Translator.git**
-
-**cd Language\_Translator**
-
-**```**
-
-
-
-**### Install Dependencies**
-
-
-
-**```bash**
-
-**pip install flask**
-
-**pip install deep-translator**
-
-**```**
-
-
-
-**### Run the Application**
-
-
-
-**```bash**
-
-**python app.py**
-
-**```**
-
-
-
-**### Open in Browser**
-
-
-
-**```text**
-
-**http://127.0.0.1:5000**
-
-**```**
-
-
-
-**## Workflow**
-
-
-
-**1. User enters text.**
-
-**2. User selects source language.**
-
-**3. User selects target language.**
-
-**4. Flask sends the request to the translator.**
-
-**5. Translation is generated.**
-
-**6. Result is displayed on the webpage.**
-
-
-
-**## Future Enhancements**
-
-
-
-**\* Speech-to-Text**
-
-**\* Text-to-Speech**
-
-**\* Language Detection**
-
-**\* Translation History**
-
-**\* Dark Mode**
-
-**\* Mobile Responsive Design**
-
-
-
-**## Author**
-
-
-
-**Siri Amara**
-
-
-
-**## License**
-
-
-
-**This project is developed for educational and learning purposes.**
-
-
+Developed as a mini project using Python Flask and Google Translate API.
 
